@@ -22,12 +22,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Tags">
-  <meta property="og:description" content="I am definitely not a corgi!">
-  <meta property="og:image" content="https://source.unsplash.com/300x300/?corgi&derpy">
+  <meta property="og:title" content="IS 445 Homework 10">
+  <meta property="og:description" content="Homework 10 Data Viz">
+  <meta property="og:image" content="assets/pngs/cars.png">
 
-  <title>Tags</title>
-  <meta name="description" content="I am definitely not a corgi!">
+  <title>IS 445 Homework 10</title>
+  <meta name="description" content="Homework 10 Data Viz">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -60,9 +60,9 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
 
-      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
 
       <a class="nav-item nav-link " href="/about/">About</a>
 
@@ -74,27 +74,49 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <!-- Collect tags from all posts --><!-- List tags & related posts -->
+  <h1 id="homework-10-is-477">Homework 10 IS 477</h1>
 
-<div class="py-3">
-  <h4 id="blogging">Blogging</h4>
-  <ol>
-  <a href="/blog/hello-blog-world"><li>The Hello World of Blogs</li></a>
-    <small class="text-muted"> - 22 August 2022</small>
-    <br/>
-  </ol>
-</div>
-<hr class="bg-light">
+<h2 id="plot-1">Plot 1:</h2>
 
-<div class="py-3">
-  <h4 id="technology">Technology</h4>
-  <ol>
-  <a href="/blog/hello-blog-world"><li>The Hello World of Blogs</li></a>
-    <small class="text-muted"> - 22 August 2022</small>
-    <br/>
-  </ol>
+<vegachart schema-url="/assets/json/floors_per_year.json" style="width: 100%"></vegachart>
+
+<vegachart schema-url="/assets/json/count.json" style="width: 100%"></vegachart>
+
+<h2 id="write-up">Write up:</h2>
+
+<p>For this plot I decided to use the building inventory dataset. This graph is a visualization of buildings built from the 1800’s until present, and how many floors they have. I was hoping to get a more positive trend as I expected more floors as the years went on, however it seemed to stay fairly stagnant at 10 floors around the 1920s. I first cleaned the data by filtering out all of the incorrect dates or rows that were missing a date, then I looked at the data frame and checked if there was any features I could use to further classify these points. I went with usage description as I found that to be the most categorical feature. This was an entirely new plot from my HW #7. For this visualization I attempted to get some form of interactivity other than the provided, however I couldn’t figure out how to do the link two plots as was shown in the doccumentation of altair. What I was trying to accomplish with interactivity was an option to select an area of the graph and the count of each usage description on a histogram below the scatter. Unfortunatly I could not get that working in time.</p>
+
+<h2 id="plot-2">Plot 2:</h2>
+
+<vegachart schema-url="/assets/json/pie_chart.json" style="width: 100%"></vegachart>
+
+<h2 id="write-up-1">Write up:</h2>
+
+<p>For my second plot I went with a much more simple visual approach and focused on transforming the data to fit the visualization. I used the licences data set for this visual and wanted to know the count of each type of licence that was administered. I first had to do some experimenting with different pandas functions to determine the best way to get a data frame of unique value counts and found that there is a fairly simple solution thanks to pandas. After I had the desired data frame I then looked at the docs to determine how to make a pie chart. For the coloring I decided to use a unique color per each type of license. I was suprised with how many cosmetic licenses where administered, that being the second most common after detective board.</p>
+
+<h2 id="search-the-data--methods">Search The Data &amp; Methods</h2>
+
+<p>Below is where we I put links to both the data and the analysis code as buttons:</p>
+
+<!-- these are written in a combo of html and liquid -->
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv">
+  Plot 1 Data
+</a>
 </div>
-<hr class="bg-light">
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb">
+  The Analysis
+</a>
+</div>
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/licenses_fall2022.csv">
+  Plot 2 Data
+</a>
+</div>
 
 </div>
   </main>
@@ -139,6 +161,17 @@
 
 </footer>
 
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
 
 
 
