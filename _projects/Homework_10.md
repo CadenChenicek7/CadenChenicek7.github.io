@@ -42,7 +42,7 @@ Below is where we I put links to both the data and the analysis code as buttons:
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/CadenChenicek7/CadenChenicek7.github.io/blob/main/python_notebooks/HW10Chenicek.ipynb" text="The Analysis" %}
 </div>
 
 <div class="left">
