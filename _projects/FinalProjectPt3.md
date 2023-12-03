@@ -15,7 +15,7 @@ custom_js:
 
 ## Plot 1:
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/video_games.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/python_notebooks/video_games.json" style="width: 100%"></vegachart>
 
 ## Write up:
 
