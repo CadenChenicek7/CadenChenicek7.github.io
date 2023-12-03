@@ -12,6 +12,7 @@ custom_js:
 
 
 # Video Game Sales and Ratings 1985-2016
+#### Work done by Caden Chenicek
 
 ## Visualization:
 
