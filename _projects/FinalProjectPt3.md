@@ -23,7 +23,13 @@ custom_js:
 
 ## Contextual Data:
 
-<img src="" alt="context1" />
+<img src="{{ site.baseurl }}/assets/pngs/gameRevenue.png" alt="context1" />
+
+[Game Revenue Source](https://www.visualcapitalist.com/50-years-gaming-history-revenue-stream/)
+
+<img src="{{ site.baseurl }}/assets/pngs/regionalSales.png" alt="context1" />
+
+[Regional Sales Source](https://www.stat.cmu.edu/capstoneresearch/spring2020/315files/team20.html)
 
 ## Search The Data & Methods
 
