@@ -11,17 +11,15 @@ custom_js:
 ---
 
 
-# Final Project Pt. 3
+# Video
 
 ## Plot 1:
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/floors_per_year.json" style="width: 100%"></vegachart>
-
-<vegachart schema-url="{{ site.baseurl }}/assets/json/count.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/video_games.json" style="width: 100%"></vegachart>
 
 ## Write up:
 
-For this plot I decided to use the building inventory dataset. This graph is a visualization of buildings built from the 1800's until present, and how many floors they have. I was hoping to get a more positive trend as I expected more floors as the years went on, however it seemed to stay fairly stagnant at 10 floors around the 1920s. I first cleaned the data by filtering out all of the incorrect dates or rows that were missing a date, then I looked at the data frame and checked if there was any features I could use to further classify these points. I went with usage description as I found that to be the most categorical feature. This was an entirely new plot from my HW #7. For this visualization I attempted to get some form of interactivity other than the provided, however I couldn't figure out how to do the link two plots as was shown in the doccumentation of altair. What I was trying to accomplish with interactivity was an option to select an area of the graph and the count of each usage description on a histogram below the scatter. Unfortunatly I could not get that working in time.
+
 
 ## Plot 2:
 
